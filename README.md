@@ -4,4 +4,5 @@
 
 ## 效果
 
-<img src="./Simulator Screen Shot.png" style="zoom:40%;" />
+
+<img src="./Simulator Screen Shot.png" width="350" height="757"/>
