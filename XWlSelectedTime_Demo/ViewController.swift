@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -28,6 +30,7 @@ class ViewController: UIViewController {
             print(visualStr)
             print(bgStrStart)
             print(bgStrEnd)
+            self.resultLabel.text = visualStr
         }
     }
 

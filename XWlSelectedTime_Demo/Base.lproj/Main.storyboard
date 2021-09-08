@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MLSelectedTimeDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XWLSelectedTime_Demo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,14 +24,25 @@
                                     <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3kk-uR-VXm"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEe-Qn-Ogk">
+                                <rect key="frame" x="186" y="539" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="k6S-41-MwE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0CJ-Ug-DXj"/>
+                            <constraint firstItem="yEe-Qn-Ogk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sju-3F-pwK"/>
+                            <constraint firstItem="yEe-Qn-Ogk" firstAttribute="top" secondItem="k6S-41-MwE" secondAttribute="bottom" constant="76" id="elz-c4-Apb"/>
                             <constraint firstItem="k6S-41-MwE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="u9n-uZ-D9O"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="yEe-Qn-Ogk" id="eNl-ep-K9t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
